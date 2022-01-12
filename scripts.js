@@ -91,3 +91,8 @@ map.on('click', 'libraries', function(f) {
     .addTo(map);
 
 });
+
+const navControl = new mapboxgl.NavigationControl({
+  showCompass: false,
+});
+map.addControl(navControl, 'top-right');
