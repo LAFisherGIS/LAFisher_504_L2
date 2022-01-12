@@ -1,16 +1,25 @@
 <html>
 <head>
-	<title>Change this</title>
+	<title>Library-to-Hospital Planning Tool</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><!--These settings are ideal for full-screen mobile use-->
 	<link rel="stylesheet" href="styles.css"/>
 	<!-- mapbox links -->
 	<script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
-
+	<script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
 </head>
 <body>
+	<h2>Library-to-Hospital Planning Tool</h2>
+	<p>This map allows for the quick and easy discovery of the hospital nearest to a given library in Pierce County. Whether you work there or simply go there regularly, just tap or click a library to find the nearest hospital's name, its address, and the distance to your library, and have that hospital surrounded by a blue circle. Note however that this may not actually be the most efficient hospital to visit, as distances are provided in an as-the-crow-flies manner and the creator is not aware of any crows which read in libraries and use maps to navigate.</p>
+
 	<div id='map'></div>
 	<script src="scripts.js"></script>
+	<script src="data/libraries.js"></script>
+	<script src="data/hospitals.js"></script>
+
+	<h3>Data Utilized</h3>
+	<p><a href="https://gisdata-piercecowa.opendata.arcgis.com/datasets/public-health-care-facilities/explore" target="_null">Pierce County Hospital Points</a> provided by anonymous user via ArcGIS Online</p>
+	<p><a href="https://gisdata-piercecowa.opendata.arcgis.com/datasets/libraries/explore" target="_null">Pierce County Library Points</a> provided by anonymous user via ArcGIS Online</p>
 </body>
 </html>
