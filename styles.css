@@ -27,6 +27,10 @@ p {
   height: 98vh
 }
 
+a:link{
+  color: lightblue;
+}
+
 @media screen and (max-width: 600px) {
   h2 {
     font: 1em/2em 'Helvetica Neue', Arial, Helvetica, sans-serif;
